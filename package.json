@@ -1,0 +1,36 @@
+{
+  "name": "coinbase-trading-agent-chat",
+  "version": "1.0.0",
+  "description": "AI-powered Coinbase trading agent with chat interface",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "chat": "ts-node src/chat/index.ts"
+  },
+  "keywords": [
+    "coinbase",
+    "trading",
+    "bot",
+    "cryptocurrency",
+    "ai",
+    "chatbot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^latest",
+    "dotenv": "^16.3.1",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
